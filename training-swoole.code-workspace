@@ -1,11 +1,47 @@
 {
 	"folders": [
 		{
-			"path": "api"
+			"name": "Base Directory",
+			"path": "."
 		},
-		{
-			"path": "docker"
-		}
 	],
-	"settings": {}
+	"settings": {
+		"files.exclude": {
+			"vendor": true,
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+		},
+		//////////////////////////////////////
+		// PHP
+		//////////////////////////////////////
+		"php.suggest.basic": true,
+
+		//////////////////////////////////////
+		// PHPCS
+		//////////////////////////////////////
+		"phpcs.enable": true,
+		"phpcs.standard": "./phpcs.xml",
+		"phpcs.executablePath": "./vendor/bin/phpcs",
+
+		//////////////////////////////////////
+		// PHPCF
+		//////////////////////////////////////
+		"phpcbf.executablePath": "./vendor/bin/phpcbf",
+		"phpcbf.enable": true,
+		"phpcbf.standard": "PSR2",
+		"phpcbf.documentFormattingProvider": true,
+		"phpcbf.debug": true,
+		"phpcbf.onsave": true,
+
+		//////////////////////////////////////
+		// Any
+		//////////////////////////////////////
+		"[php]": {
+			"editor.formatOnSave": false,
+			"editor.formatOnPaste": false,
+		}
+	}
 }
