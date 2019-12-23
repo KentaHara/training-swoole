@@ -2,11 +2,11 @@ version: '3'
 services:
     training-swoole-api:
         build:
-            context: ./amd64
+            context: ./centos
             dockerfile: Dockerfile
         tty: yes
         ports:
             - '80:80'
         volumes:
-            - ../api/dispachMode1/:/var/www
+            - ../api/dispachMode2/:/var/www
         restart: always
