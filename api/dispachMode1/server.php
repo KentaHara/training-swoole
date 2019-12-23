@@ -24,7 +24,7 @@ $http->set(
          * 2: assignment by mod
          * 3: preemptive assignment
          */
-        'dispatch_mode'   => 2,
+        'dispatch_mode'   => 1,
     ]
 );
 
